@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Responsiv skog
-// @namespace    http://underskog.no/*
+// @namespace    http://underskog.no/
 // @version      0.1
 // @description  Mobilteleskogen
 // @author       Antidecaf
-// @match        https://underskog.no/
+// @match        https://underskog.no/*
 // @grant        none
 // ==/UserScript==
 /* jshint -W097 */
