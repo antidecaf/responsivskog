@@ -66,13 +66,13 @@
     }
     #header {
         padding: 0!important;
-        height: 40px!important;
+        height: 44px!important;
     }
     #header h1 {
         width: 100%!important;
         margin: 0!important;
         font-size: 22px!important;
-        height: 32px!important;
+        height: 36px!important;
         text-align: center;
     }
     #header_searchbox {
@@ -98,6 +98,13 @@
         word-break: break-word;
         font-size: 22px;
     }
+    #maincontent.frontpage_maincontent .circle_threads_block h4 {
+        font-size: 16px!important;
+    }
+    #maincontent.frontpage_maincontent .circle_threads_block,
+    #maincontent.frontpage_maincontent .circle_threads_block h4 a {
+        font-size: 11px!important;
+    }
     ul.metadata>li {
         padding: 0;
     }
@@ -105,12 +112,18 @@
         background-position: 0 .3em!important;
         padding-left: 20px;
     }
+    ul.list.compact>li {
+        font-size: 14px;
+    }
     .thread_list li .thread .thread_meta .new_comment_count {
         float: none;
     }
     p,
     .calendar_biglist>ul>li h2 {
         font-size: 14px;
+    }
+    .sidebar .panel h2 {
+        font-size: 16px;
     }
     .text p {
         font-size: 14px!important;
