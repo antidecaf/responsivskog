@@ -119,17 +119,19 @@
     #content {
         position: relative;
     }
-    #togglesidebar {
-        margin-bottom: 15px;
-        display: block;
+    .togglesidebar {
+        margin-bottom: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 5px;
     }
-    .sidebar_frontpage {
+    .sidebar_frontpage, .calendar_bar_frontpage {
         display: none;
         float: none;
         background: rgba(255,255,255,.95);
         position: absolute;
         left: 1%;
-        top: 25px;
+        top: 32px;
         width: 98%;
         padding: 10px;
         border: 1px solid #ccc;
