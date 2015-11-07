@@ -125,6 +125,7 @@
         padding-left: 10px;
         padding-right: 10px;
         margin-right: 5px;
+        cursor: pointer;
     }
     .sidebar_frontpage, .calendar_bar_frontpage {
         display: none;
