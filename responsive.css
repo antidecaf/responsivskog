@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
     body {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: HelveticaNeue-Light, Helvetica Neue Light, Arial, Helvetica, sans-serif;
         font-size: 14px;
     }
     body #maincontent.frontpage_maincontent #post_stream_block .post_list,
@@ -10,11 +10,17 @@
     .site_search #site_search_field #site_search_input {
         width: 200px;
         height: 1.6em;
+        line-height: 1.6em;
     }
     .site_search #site_search_field .site_search_dropdown {
         min-width: 200px!important;
         right: 10px!important;
         left: 10px;
+    }
+    input[type="text"],
+    input[type="number"],
+    textarea {
+        font-size: 16px;
     }
     #header_searchbox,
     #messenger_container,
@@ -52,18 +58,20 @@
         text-overflow: ellipsis;
     }
     #header {
-        padding: 5px 0!important
+        padding: 0!important;
+        height: 40px!important;
     }
     #header h1 {
         width: 100%!important;
         margin: 0!important;
-        padding: 0 0 3px!important;
-        font-size: 16px!important;
-        height: 15px!important;
+        font-size: 22px!important;
+        height: 32px!important;
         text-align: center;
     }
     #header_searchbox {
         padding-right: 0!important;
+        padding-top: 10px!important;
+        padding-bottom: 4px;
         text-align: center;
     }
     #menu .wrapper ul:nth-child(2) {
@@ -90,11 +98,41 @@
         background-position: 0 .3em!important;
         padding-left: 20px;
     }
+    .thread_list li .thread .thread_meta .new_comment_count {
+        float: none;
+    }
     p,
     .calendar_biglist>ul>li h2 {
         font-size: 14px;
     }
     .text p {
         font-size: 14px!important;
+    }
+    .small {
+        font-size: 12px;
+    }
+    #content {
+        position: relative;
+    }
+    .sidebar_frontpage {
+        display: none;
+        float: none;
+        background: rgba(255,255,255,.95);
+        position: absolute;
+        left: 1%;
+        top: 25px;
+        width: 98%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        box-shadow: 0 2px 5px rgba(0,0,0,.25);
+        z-index: 11;
+    }
+    .market_item_block {
+        list-style: none;
+        padding: 0 5px 0 0;
+    }
+    #market_panel .market_item_list>ul>li h3 {
+        font-size: 12px;
     }
 }
