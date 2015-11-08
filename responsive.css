@@ -1,6 +1,7 @@
 @media screen and (min-width: 769px) {
     #togglesidebar,
-    #togglecalendar {
+    #togglecalendar,
+    #togglemessenger {
         display: none;
     }
 }
@@ -172,5 +173,10 @@
     }
     .user_message {
         display: none;
+    }
+    #togglemessenger {
+        display: block;
+        font-size: 14px;
+        margin: -17px 0 25px 0;
     }
 }
