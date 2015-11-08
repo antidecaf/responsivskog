@@ -171,12 +171,16 @@
     #market_panel .market_item_list>ul>li h3 {
         font-size: 12px;
     }
-    .user_message {
-        display: none;
-    }
     #togglemessenger {
         display: block;
         font-size: 14px;
         margin: -17px 0 25px 0;
+    }
+}
+
+/* Skjuling av beskjeder */
+@media screen and (max-width:768px) {
+    .user_message {
+        display: none;
     }
 }
