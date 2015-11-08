@@ -8,7 +8,8 @@
     body {
         font-family: HelveticaNeue-Light, Helvetica Neue Light, Arial, Helvetica, sans-serif;
         font-size: 14px;
-        -webkit-text-size-adjust: 105%;
+        -webkit-text-size-adjust: 110%;
+        line-height: 1.3em;
     }
     body #maincontent.frontpage_maincontent #post_stream_block .post_list,
     body .wrapper {
