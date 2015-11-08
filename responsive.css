@@ -181,7 +181,7 @@
 /* Skjuling av beskjeder */
 @media screen and (max-width:768px) {
     #tip_inbox,
-    .user_message {
+    #messenger_inbox {
         display: none;
     }
 }

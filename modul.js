@@ -6,7 +6,7 @@
     $('#post_stream_block>h3>a[href="/nytt/innlegg"]').html('Fora du følger');
     if (hideMessages == true) {
 	    $('#maincontent').prepend('<a href="#" id="togglemessenger" class="open">Vis beskjeder</a>');
-	    $('head').append('<style type="text/css">@media screen and (max-width:768px){#tip_inbox,.user_message{display:none}}</style>');
+	    $('head').append('<style type="text/css">@media screen and (max-width:768px){#tip_inbox,#messenger_inbox{display:none}}</style>');
 	}
     if ($('.frontpage_maincontent').length) {
     	$('#content').prepend('<button id="togglesidebar" class="togglesidebar">Sidebar</button> <button id="togglecalendar" class="togglesidebar">Kalender</button>');
@@ -30,7 +30,7 @@
 	});
     $('#togglemessenger').click(function() {
     	$('#tip_inbox').toggle();
-	 	$('.user_message').toggle();
+	 	$('#messenger_inbox').toggle();
 	 	if ($('#togglemessenger').hasClass('open')) {
 	 		$('#togglemessenger').removeClass('open').html('Skjul beskjeder');
 	 	} else {
