@@ -170,4 +170,7 @@
     #market_panel .market_item_list>ul>li h3 {
         font-size: 12px;
     }
+    .user_message {
+        display: none;
+    }
 }
