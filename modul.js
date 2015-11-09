@@ -28,8 +28,9 @@
 	        }
 	    }        
 	});
+	// Evigvarende meny
 	if ($('#menu').css('position') === 'fixed') {
-		// Evigvarende meny
+		$('#menu').addClass('sticky');
 	}
     $('#togglemessenger').click(function() {
     	$('#tip_inbox').toggle();
