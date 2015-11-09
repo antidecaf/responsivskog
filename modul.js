@@ -28,6 +28,9 @@
 	        }
 	    }        
 	});
+	if ($('#menu').css('position') === 'fixed') {
+		// Evigvarende meny
+	}
     $('#togglemessenger').click(function() {
     	$('#tip_inbox').toggle();
 	 	$('#messenger_inbox').toggle();
