@@ -51,7 +51,7 @@
     .dottedRight {
         border: 0;
     }
-    body #menu #user_menu {
+    #menu:not(.sticky) #user_menu {
         padding: 5px 0 10px;
         width: 100%;
     }
@@ -66,6 +66,36 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+    #menu:not(.sticky) .wrapper ul:nth-child(2) {
+        clear: both;
+        text-align: center;
+    }
+    #menu:not(.sticky) .wrapper ul:nth-child(2) li {
+        float: none;
+        display: inline;
+        margin: 0 5px;
+    }
+    #menu.sticky {
+        overflow-x: visible;
+        overflow-y: hidden;
+        width: 100%!important;
+        height: 1.4em;
+        line-height: 1.4em;
+    }
+    #menu.sticky .wrapper {
+        white-space: nowrap;
+    }
+    #menu.sticky ul {
+        float: none!important;
+        display: inline-block;
+        height: 1.4em;
+        padding-right: 15px;
+    }
+    #menu.sticky ul li {
+        float: none;
+        display: inline-block;
+        font-size: 12px;
     }
     #header {
         padding: 0!important;
@@ -83,15 +113,6 @@
         padding-top: 10px!important;
         padding-bottom: 4px;
         text-align: center;
-    }
-    #menu .wrapper ul:nth-child(2) {
-        clear: both;
-        text-align: center;
-    }
-    #menu .wrapper ul:nth-child(2) li {
-        float: none;
-        display: inline;
-        margin: 0 5px;
     }
     body #maincontent {
         padding-right: 0;
