@@ -197,6 +197,32 @@
         font-size: 14px;
         margin: -17px 0 25px 0;
     }
+    img.zoomed_image {
+        height: auto!important;
+        left: 0!important;
+        margin-top: 2.5em;
+        box-shadow: 0 0 15px rgba(0,0,0,.3);
+        box-sizing: border-box;
+    }
+    .user_messages_conversation_page .message_conversations_sidebar {
+        width: 100%;
+    }
+    .user_messages_conversation_page .message_conversations .message_conversation {
+        padding: 5px 5px 0 5px;
+    }
+    .user_messages_conversation_page .conversation_messages_pane {
+        width: 100%;
+        padding-left: 0;
+    }
+    .user_messages_conversation_page .conversation_messages .conversation_message {
+        width: auto;
+    }
+    .user_messages_conversation_page .conversation_messages .conversation_message.conversation_message_from_you {
+        margin-left: 10px;
+    }
+    .user_messages_conversation_page .conversation_messages .conversation_message.conversation_message_to_you {
+        margin-right: 10px;
+    }
 }
 
 /* Skjuling av beskjeder */
