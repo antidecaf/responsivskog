@@ -1,7 +1,8 @@
 @media screen and (min-width: 769px) {
     #togglesidebar,
     #togglecalendar,
-    #togglemessenger {
+    #togglemessenger,
+    .unreadcomments {
         display: none;
     }
 }
@@ -222,6 +223,14 @@
     }
     .user_messages_conversation_page .conversation_messages .conversation_message.conversation_message_to_you {
         margin-right: 10px;
+    }
+    .unreadcomments {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        width: 160px;
+        margin-left: -80px;
+        box-shadow: 0 0 15px rgba(0,0,0,.3);
     }
 }
 
