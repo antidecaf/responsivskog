@@ -41,4 +41,12 @@
 	 	}
 	 	return false;
 	});
+	// Scroll to unread
+	if ($('a[name="unread"]').length) {
+		$(document).ready(function () {
+		    $('html, body').animate({
+		        scrollTop: $('a[name="unread"]').offset().top
+		    }, 'slow');
+		});
+	}
 })(jQuery);
