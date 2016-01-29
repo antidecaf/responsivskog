@@ -226,7 +226,7 @@
     }
     .unreadcomments {
         position: fixed;
-        top: 10px;
+        top: 40px;
         left: 50%;
         width: 160px;
         margin-left: -80px;
