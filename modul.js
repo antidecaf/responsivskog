@@ -41,14 +41,4 @@
 	 	}
 	 	return false;
 	});
-	// Scroll to unread
-	if ($('a[name="unread"]').length) { // Skriv om denne testen - unread finnes alltid i dom-en
-		$('body').append('<button class="unreadcomments">Uleste kommentarer</button>')
-		$('.unreadcomments').click(function () {
-		    $('html, body').animate({
-		        scrollTop: $('a[name="unread"]').offset().top
-		    }, 'slow');
-		    $('.unreadcomments').hide();
-		});
-	}
 })(jQuery);
