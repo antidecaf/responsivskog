@@ -17,6 +17,9 @@
     body .wrapper {
         width: auto;
     }
+    body.fixed #page {
+        margin: calc(1.6em + 70px) 0 20px 0;
+    }
     .site_search #site_search_field #site_search_input {
         width: 200px;
         height: 1.6em;
@@ -52,51 +55,36 @@
     .dottedRight {
         border: 0;
     }
-    #menu:not(.sticky) #user_menu {
-        padding: 5px 0 10px;
-        width: 100%;
-    }
-    #menu:not(.sticky) #user_menu li {
-        display: inline-block;
-        width: 45%;
-        padding: 5px 1.5%;
-        background: #eee;
-        margin: 3px 1%!important;
-        text-align: center;
-        border-radius: 3px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    #menu:not(.sticky) .wrapper ul:nth-child(2) {
-        clear: both;
-        text-align: center;
-    }
-    #menu:not(.sticky) .wrapper ul:nth-child(2) li {
-        float: none;
-        display: inline;
-        margin: 0 5px;
-    }
-    #menu.sticky {
+    #menu {
+        background: rgba(255,255,255,.95);
         overflow-x: visible;
         overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
         width: 100%!important;
-        height: 1.4em;
-        line-height: 1.4em;
+        height: 1.6em;
+        line-height: 1.6em;
     }
-    #menu.sticky .wrapper {
+    .fixed #menu {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+    }
+    #menu .wrapper {
         white-space: nowrap;
+        padding: 0;
     }
-    #menu.sticky ul {
+    #menu ul {
         float: none!important;
         display: inline-block;
-        height: 1.4em;
+        height: 1.5em;
+        line-height: 1.5em;
         padding-right: 15px;
     }
-    #menu.sticky ul li {
-        float: none;
+    #menu ul li {
+        float: none!important;
         display: inline-block;
-        font-size: 12px;
+        font-size: 14px!important;
+        margin: 0 10px!important;
     }
     #header {
         padding: 0!important;
@@ -139,6 +127,10 @@
     }
     ul.list.compact>li {
         font-size: 14px;
+    }
+    ul.metadata>li>label {
+       display: block;
+       text-align: left;
     }
     .thread_list li .thread .thread_meta .new_comment_count {
         float: none;
@@ -207,6 +199,7 @@
     }
     .user_messages_conversation_page .message_conversations_sidebar {
         width: 100%;
+        min-height: auto!important;
     }
     .user_messages_conversation_page .message_conversations .message_conversation {
         padding: 5px 5px 0 5px;
@@ -223,13 +216,5 @@
     }
     .user_messages_conversation_page .conversation_messages .conversation_message.conversation_message_to_you {
         margin-right: 10px;
-    }
-}
-
-/* Skjuling av beskjeder */
-@media screen and (max-width:768px) {
-    #tip_inbox,
-    #messenger_inbox {
-        display: none;
     }
 }

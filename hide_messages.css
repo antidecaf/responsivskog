@@ -1,0 +1,7 @@
+/* Skjuling av beskjeder */
+@media screen and (max-width:768px) {
+    #tip_inbox,
+    #messenger_inbox {
+        display: none;
+    }
+}
